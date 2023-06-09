@@ -1,0 +1,241 @@
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+th {
+  display: table-cell;
+  font-weight: bold;
+  vertical-align: bottom;
+  border: 0;
+}
+h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.container2 {
+  padding-bottom: 50px;
+}
+.container2-1 {
+  padding: 0 30px;
+}
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.average-header-maintext {
+  font-weight: 400;
+  font-size: 40px;
+}
+.average-header-subHeading {
+  font-size: 20px;
+}
+.color-green {
+  color: #5dc7c2;
+}
+.average-header-subHeading,
+.average-header-subtext {
+  font-weight: 400;
+  color: #0c0f48;
+  opacity: 0.45;
+  font-weight: 300;
+}
+
+.average-block {
+  padding-bottom: 30px;
+}
+.average-subText {
+  font-weight: 400;
+  color: #0c0f48;
+  opacity: 0.45;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.75px;
+}
+
+.average-heading {
+  font-weight: 400;
+  font-size: 80px;
+}
+
+.subText-heading {
+  font-size: 28px;
+}
+.theme-dark .average-header-subHeading,
+.theme-dark .average-subText {
+  color: #fff;
+}
+
+/* table */
+
+.table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.table table {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  margin: 0;
+  text-align: center;
+  border-color: gray;
+}
+
+.theme-dark th h4 {
+  font-family: Oswald;
+  font-size: 24px;
+  opacity: 0.45;
+  letter-spacing: 1px;
+  margin: 0 0 -5px;
+  color: #fff;
+}
+.theme-light th h4 {
+  font-family: Oswald;
+  font-size: 16px;
+  opacity: 0.45;
+  letter-spacing: 1px;
+  margin: 0 0 -5px;
+  color: #0c0f48;
+}
+
+.theme-light tbody tr {
+  background-color: #f8f9fa;
+}
+.theme-dark tbody tr {
+  background-color: #2e3241;
+}
+td h4 {
+  padding: 0.75rem;
+  text-align: center;
+}
+.theme-dark td h4 {
+  font-family: Oswald;
+  font-size: 24px;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.theme-light td h4 {
+  font-family: Oswald;
+  font-size: 16px;
+  color: #0c0f48;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.footer-text {
+  padding: 10px;
+}
+
+/* responsiveness  */
+
+@media screen and (max-width: 1060px) {
+  .subText-heading {
+    font-size: 22px;
+  }
+  .average-heading {
+    font-weight: 400;
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .img-logo {
+    width: 100%;
+  }
+  .header-button,
+  .header-telegram-button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .average-heading {
+    font-weight: 400;
+    font-size: 48px;
+  }
+  .right-header {
+    text-align: center;
+  }
+  .average-subText {
+    font-weight: 400;
+    color: #060710;
+    opacity: 0.45;
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .subText-heading {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .average-header-maintext {
+    font-weight: 400;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .average-header-subHeading,
+  .average-header-subtext {
+    font-weight: 400;
+    color: #070717;
+    opacity: 0.45;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+  .average-header-subHeading {
+    font-size: 10px;
+  }
+  .average-heading {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  tbody tr td,
+  thead tr th {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .theme-dark {
+    position: relative;
+    background: #191d28;
+    min-height: 100vh;
+    color: #fff;
+    font-family: Oswald, sans-serif;
+  }
+}
+
+/* show */
+
+.show {
+  position: absolute;
+  will-change: transform;
+  top: 0px;
+  left: 0px;
+  transform: translate3d(5px, 36px, 0px);
+}
